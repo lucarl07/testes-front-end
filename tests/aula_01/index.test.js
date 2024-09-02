@@ -7,5 +7,7 @@ test("Verifica área do quadrado", () => {
 })
 
 test("Comparação de nomes", () => {
-  expect("igor").toBe("alves")
+  expect("igor").toBe("igor")
+  expect("igor").not.toBe("alves")
+  expect("igor").toEqual("igor")
 })
