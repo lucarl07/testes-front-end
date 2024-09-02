@@ -1,6 +1,4 @@
-function areaQuadrado(lado) {
-  return lado ** 2
-}
+import { areaQuadrado } from "./index.js"
 
 test("Verifica área do quadrado", () => {
   expect(areaQuadrado(5)).toBe(25)
