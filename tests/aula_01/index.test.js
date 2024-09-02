@@ -12,6 +12,6 @@ test("Comparação de nomes", () => {
   expect("igor").toEqual("igor");
 });
 
-test("Verifica se tem genipapo", () => {
-  expect(listaFrutas).toContain("genipapo");
+test("Verifica se não tem genipapo", () => {
+  expect(listaFrutas).not.toContain("genipapo");
 });
