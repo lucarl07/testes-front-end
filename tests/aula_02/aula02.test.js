@@ -1,4 +1,4 @@
-import { divisao, cursos, influencer } from "./aula02.js";
+import { divisao, cursos, influencer, maxAlunos } from "./aula02.js";
 
 test("Verifica se o segundo argumento é zero", () => {
   expect(() => divisao(10, 0)).toThrow(Error)
@@ -19,4 +19,9 @@ test("Verificar se a propriedade triguinho existe no objeto influencer", () => {
 test("Verificar se existem as propriedades-filho do endereço", () => {
   expect(influencer).toHaveProperty("endereco.cidade")
   expect(influencer).toHaveProperty("endereco.estado")
+})
+
+test("Verificar número máximo e mínimo", () => {
+  expect(maxAlunos).toBeGreaterThan(25)
+  expect(maxAlunos).toBeLessThan(40)
 })

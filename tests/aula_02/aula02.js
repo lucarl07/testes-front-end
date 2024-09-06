@@ -17,3 +17,5 @@ export const influencer = {
   seguidores: 48000000,
   triguinho: false
 }
+
+export const maxAlunos = 30
