@@ -15,3 +15,8 @@ test("Verificar se a propriedade triguinho existe no objeto influencer", () => {
   expect(influencer).toHaveProperty("triguinho", false)
   expect(influencer).not.toHaveProperty("BET")
 })
+
+test("Verificar se existem as propriedades-filho do endereço", () => {
+  expect(influencer).toHaveProperty("endereco.cidade")
+  expect(influencer).toHaveProperty("endereco.estado")
+})
