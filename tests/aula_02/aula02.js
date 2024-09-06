@@ -4,3 +4,5 @@ export const divisao = (dividendo, divisor) => {
   }
   return dividendo / divisor;
 }
+
+export const cursos = ["Eletrotécnica", "Informática para Internet", "Mecânica Automotiva", "Moda", "Soldagem", "Torneraria"]
